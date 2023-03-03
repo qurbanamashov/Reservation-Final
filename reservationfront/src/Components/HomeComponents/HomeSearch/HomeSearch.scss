@@ -1,0 +1,176 @@
+
+.section_search_data {
+    width: 100%;
+    padding: 15px 0;
+    background:#f2f0ec;
+    z-index: 100;
+    .search_data_width {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        border: 3px solid rgb(100, 66, 34);
+        padding: 20px 0;
+        background-color: #fff;
+        border-radius: 10px;
+
+        .searchItem {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            position: relative;
+
+            i {
+                color: lightgray;
+            }
+
+            input {
+                border: none;
+                outline: none;
+            }
+
+            span {
+                cursor: pointer;
+                color: lightgray;
+            }
+
+            .date {
+                position: absolute;
+                top: 39px;
+                left: -107px;
+                z-index: 10;
+            }
+            .options{
+                position: absolute;
+                top: 39px;
+                left: -10px;
+                background-color: white;
+                color: grey;
+                border-radius: 13px;
+                z-index: 10;
+                .openOption{
+                    width: 200px;
+                    display: flex;
+                    justify-content:space-between;
+                    margin: 10px;
+                    align-items: center;
+                    span{
+                        font-size: 20px;
+                    }
+                    .openOption_flex{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        button{
+                            width: 30px;
+                            height: 30px;
+                            font-size: 30px;
+                            border: 0;
+                             background-color: #fff;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .section_search_data {
+        width: 100%;
+        padding: 15px 0;
+        background:rgba(100, 66, 34, 0.7);
+        z-index: 100;
+        padding: 30 20px;
+        height: 80vh;
+        .search_data_width {
+            max-width: 600px;
+            margin: 0 auto;
+            justify-content: space-around;
+            flex-direction: column;
+            row-gap: 20px;
+            padding: 20px 20px;
+            background-color: #fff;
+            align-items: center;
+            .searchItem {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                position: relative;
+                height: 90px;
+                i {
+                    color: lightgray;
+                    font-size: 30px;
+                }
+    
+                input {
+                    border: none;
+                    outline: none;
+                    font-size: 20px;
+                }
+    
+                span {
+                    cursor: pointer;
+                    color: lightgray;
+                    font-size: 20px
+                }
+    
+                .date {
+                    position: absolute;
+                    top: 82px;
+                    left: -80px;
+                    z-index: 10;
+                }
+                .options{
+                    position: absolute;
+                    top: 82px;
+                    left: 13px ;
+                    background-color: white;
+                    color: grey;
+                    border-radius: 13px;
+                    z-index: 10;
+                    .openOption{
+                        width: 200px;
+                        display: flex;
+                        justify-content:space-between;
+                        margin: 10px;
+                        align-items: center;
+                        span{
+                            font-size: 20px;
+                        }
+                        .openOption_flex{
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            button{
+                                width: 30px;
+                                height: 30px;
+                                font-size: 30px;
+                                border: 0;
+                                 background-color: #fff;
+                            }
+    
+                        }
+                    }
+                }
+                button{
+                    width: 200px;
+                    height: 40px;
+                    border-radius: 13px;
+                    background-color: rgb(100, 66, 34);
+                    border: 0;
+                    color: white;
+                    cursor: pointer;
+                    font-size: 20px;
+                    &:hover{
+                        border: 1px solid rgb(100, 66, 34);
+                        background-color: white;
+                        color: rgb(100, 66, 34);
+                    }
+    
+                }
+            }
+        }
+    }
+}

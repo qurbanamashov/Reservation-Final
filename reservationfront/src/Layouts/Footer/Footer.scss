@@ -1,0 +1,186 @@
+footer {
+    width: 100%;
+    padding: 100px 0;
+    background-image: url("https://mediacity.co.in/riorelax/static/media/footer-bg.a14b4083746ea8d378e7.png");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .footer_width {
+        max-width: 1300px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .Footer_contact_box {
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+            margin-bottom: 20px;
+            .footer_logo {
+                width: 200px;
+                height: 70px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .footer_context {
+                display: flex;
+                flex-direction: column;
+                row-gap: 18px;
+
+                .context {
+                    display: flex;
+                    gap: 7px;
+                    color: white;
+
+                    span,
+                    i {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+
+        }
+
+        .Footer_contact_box_one {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+            color: white;
+
+            .footer_title {
+                h3 {
+                    font-size: 35px;
+                }
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                row-gap: 14px;
+
+                li {
+                    font-size: 20px;
+
+                    &:hover {
+                        color: rgb(100, 66, 38);
+                    }
+                }
+            }
+        }
+
+        .Footer_location_box {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+
+            h3 {
+                font-size: 30px;
+                color: white;
+            }
+
+            iframe {
+                width: 300px;
+                height: 200px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:780px) {
+    footer {
+        width: 100%;
+        padding: 100px 20px;
+        background-image: url("https://mediacity.co.in/riorelax/static/media/footer-bg.a14b4083746ea8d378e7.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+        .footer_width {
+            align-items: center;
+            .Footer_contact_box {
+                display: flex;
+                flex-direction: column;
+                row-gap: 30px;
+
+                .footer_logo {
+                    width: 200px;
+                    height: 70px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .footer_context {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 18px;
+
+                    .context {
+                        display: flex;
+                        gap: 7px;
+                        color: white;
+
+                        span,
+                        i {
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+
+            }
+
+            .Footer_contact_box_one {
+                display: flex;
+                flex-direction: column;
+                row-gap: 30px;
+                color: white;
+
+                .footer_title {
+                    h3 {
+                        font-size: 35px;
+                    }
+                }
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 14px;
+
+                    li {
+                        font-size: 20px;
+
+                        &:hover {
+                            color: rgb(100, 66, 38);
+                        }
+                    }
+                }
+            }
+
+            .Footer_location_box {
+                display: flex;
+                flex-direction: column;
+                row-gap: 30px;
+
+                h3 {
+                    font-size: 30px;
+                    color: white;
+                }
+
+                iframe {
+                    width: 300px;
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
